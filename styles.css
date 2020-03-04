@@ -1,0 +1,237 @@
+/* Created by draft EG */
+* {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+/* GENERAL */
+html {
+    font-family: 'Sintony', sans-serif;
+    background-color: #f8f8f8;
+    background-image: url(images/draft-background.png);
+    background-position-x: right;
+    background-position-y: 64px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+}
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    top: 0%;
+    margin: 0%;
+    padding: 0%;
+    z-index: 10;
+    text-align: center;
+
+    background: #ffffff;
+    box-shadow: 0px 2px 2px #eeeeee;
+}
+.nav-button {
+    box-sizing: border-box;
+    display: block;
+    margin: 0%;
+    padding: 14px;
+}
+
+.nav-button:hover {
+    background-color: gold;
+}
+
+header {
+    padding: 25% 5% 10% 5%;
+}
+
+section {
+    padding: 10% 0%;
+}
+
+button {
+    color: black;
+}
+
+main {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.navbar {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0%;
+}
+
+footer {
+    padding: 2% 0%;
+    align-content: center;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+/* TEXT */
+h1, h2, h3, h4, h5, h6 {
+    color: #222222
+}
+h1 {
+    letter-spacing: 0.2em;
+}
+
+.slogan {
+    letter-spacing: 0.45em;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    width: 200px;
+    height: 48px;
+    margin: 12px 0%;
+
+    background-color: #111111;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#logo {
+    position: fixed;
+    left: 5%;
+}
+
+form {
+    display: inline-block;
+    width: 50%;
+    min-width: 320px;
+    text-align: left;
+}
+
+input, textarea {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+
+    resize: none;
+}
+
+.submit {
+    display: block;
+    box-sizing: border-box;
+    padding: 12px;
+    
+    background-color: #111111;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery > div {
+    width: 240px;
+    margin: 24px;
+}
+
+.social {
+    margin: 0% 12px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.services > div {
+    margin: 24px 60px;
+    max-width: 240px;
+}
+
+.services > div >img {
+    transform: scale(1);
+    transition: all 0.2s ease;
+}
+
+.services > div > img:hover {
+    transform: scale(1.1);
+}
+
+/* SLOGAN */
+.slogan {
+    position: absolute;
+}
+.slogan-word {
+    display: inline-block;
+}
+.slogan-word span {
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%)
+  }
+  2% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(50%)
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50%)
+  }
+}
+.slogan-word span:nth-child(1) {
+    animation-delay: 0s;
+}
+.slogan-word span:nth-child(2) {
+    animation-delay: 2s;
+}
+.slogan-word span:nth-child(3) {
+    animation-delay: 4s;
+}
+.slogan-word span:nth-child(4) {
+    animation-delay: 6s;
+}
+.slogan-word span:nth-child(5) {
+    animation-delay: 8s;
+}
