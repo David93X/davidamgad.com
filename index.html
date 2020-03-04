@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="Design, Graphic, Branding, UI/UX, Web">
-    <meta name="description" content="An architect/ Graphic Desiger based in Cairo, Egypt">
+    <meta name="description" content="Architect & Designer based in Cairo, Egypt and specialized in branding">
+
+<!-- Global site tag (gtag.js) - Google Analytics
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39332413-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-39332413-4');
+</script>" -->
+
     <title>DAVID AMGAD | Architect & Designer</title>
+    <link rel="stylesheet" href="/normalize.css">
     <link rel=stylesheet href=styles.css>
     <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/draft-logomark-emblem-black.png">
@@ -16,10 +28,10 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <img id=logo src="images/draft-logomark-black.png" alt="DAVID AMGAD Logo" height="32px">
+        <a id="logo" href="https://www.drafteg.com/"><img src="images/draft-logomark-black.png" alt="Draft Design Studio Logo" height="32px"></a>
         <a class="nav-button" href="#services">SERVICES</a> |
         <a class="nav-button" href="#portfolio">PORTFOLIO</a> |
-        <a class="nav-button" href="#contact us">CONTACT ME</a>
+        <a class="nav-button" href="#contact me">CONTACT ME</a>
     </nav>
 
     <!-- Header -->
@@ -36,19 +48,33 @@
         </div>
         <br>
         <br>
-        <p>I'm a young Architect / Graphic Designer based in Cairo, Egypt</p>
-        <p>I'm specialized in branding and brand identity creation.</p>
-        <p>I love design and appreciate simplicity :)</p>
-        <button class="cta" type="button" onclick="window.location.href = '#contact me'">CONTACT ME</button>
+        <p>I'm a young architect & designer based in Cairo, Egypt</p>
+        <p>I specialize in branding and brand identity creation.</p>
+        <button class="cta" type="button" onclick="window.location.href = '#contact us'">CONTACT US</button>
     </header>
 
     <main>
         <!-- SERVICES -->
         <section id="services">
             <h2>SERVICES</h2>
-            <p>Branding</p>
-            <p>Web Design</p>
-            <p>UI/UX Design</p>
+            <div class="services">
+                <div class="service" >
+                    <img src="/images/draft-services-branding.png" height="120px">
+                    <h3>Branding</h3>
+                    <p>I can help you create a visual identity that diffrentiate you from others</p>
+                </div>
+                <div class="service" >
+                    <img src="/images/draft-services-ui.png" height="120px">
+                    <h3>UI/UX</h3>
+                    <p>Start with a website that introduces your brand to the world</p>
+                </div>
+                <div class="service" >
+                    <img src="/images/draft-services-graphic-design-02.png" height="120px">
+                    <h3>Creative Design</h3>
+                    <p>Whether it's text, image, sound or video. deliver your message and engage customers</p>
+                </div>
+            </div>
+
         </section>
 
         <!-- PORTFOLIO -->
@@ -56,14 +82,14 @@
             <h2>PORTFOLIO</h2>
             <p>Here's a sample of my work</p>
             <div class="gallery">
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
-              <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
+                <div><img src="images/raft-gallery-placeholder.png"></div>
             </div>
         </section>
 
@@ -71,7 +97,7 @@
 
         <!-- CONTACT ME -->
         <section id="contact me">
-            <h2>CONTACT ME</h2>
+            <h2>CONTACT US</h2>
             <p>Let's get in touch, Send me a message</p>
 
             <form name=contact-form method="POST" data-netlify="true">
@@ -84,7 +110,7 @@
                 </label>
                 <br>
                 <label for="message">
-                    Message <textarea id="message" name="message" rows="4" required></textarea>
+                    Message <textarea id="message" name="message" rows="5" required></textarea>
                 </label>
                 <br>
                 <input class="submit" type="submit" id="submit" value="Send">
@@ -96,11 +122,14 @@
 
 <!-- Footer -->
 <footer>
-    <a class="social" href="https://www.facebook.com/DavidAmgad/" target="_blank"><img src="images/draft-facebook.svg" width="24px" title="Facebook"></a>
-    <a class="social" href="https://www.instagram.com/david93x/" target="_blank"><img src="images/draft-instagram.svg" width="24px" title="Instagram"></a>
-    <a class="social" href="https://www.linkedin.com/profile/davidamgad/" target="_blank"><img src="images/draft-linkedin.svg" width="24px" title="LinkedIn"></a>
-    <p>©2020 DAVID AMGAD</p>
-    <p>+20 127 323 8686</p>
+    <a class="social" href="https://www.facebook.com/DavidAmgad/" target="_blank"><img src="images/draft-facebook.svg"
+            width="24px" title="Facebook"></a>
+    <a class="social" href="https://www.instagram.com/david93x/" target="_blank"><img src="images/draft-instagram.svg"
+            width="24px" title="Instagram"></a>
+    <a class="social" href="https://www.linkedin.com/p/davidamgad/" target="_blank"><img
+            src="images/draft-linkedin.svg" width="24px" title="LinkedIn"></a>
+    <p>Copyrights reserved ©2020 DAVID AMGAD</p>
+    <a href="tel:+201273238686">+20 127 323 8686</a>
 </footer>
 
 </html>
