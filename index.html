@@ -2,135 +2,284 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="Graphic Designer, Design, Graphic, Branding, UI/UX, Web Design, Architect, Architecture, Vizualization, David Amgad, Cairo, Logo Design, Brand Indentity, Brand Identity Designer, Corporate Identity">
-    <meta name="description" content="Architect & Designer based in Cairo, Egypt and specialized in branding">
-
-<!-- Global site tag (gtag.js) - Google Analytics
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39332413-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-39332413-4');
-</script>" -->
-
     <title>DAVID AMGAD | Architect & Designer</title>
-    <link rel="stylesheet" href="/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel=stylesheet href=styles.css>
-    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/draft-logomark-emblem-black.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="icon" href="images/DavidAmgad_logo-icon.png">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
+
+        .w3-third img {
+            margin-bottom: -6px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+        .w3-third img:hover {
+            opacity: 1
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Navbar -->
-    <nav>
-        <a id="logo" href="https://www.drafteg.com/"><img src="images/draft-logomark-black.png" alt="Draft Design Studio Logo" height="32px"></a>
-        <a class="nav-button" href="#services">SERVICES</a> |
-        <a class="nav-button" href="#portfolio">PORTFOLIO</a> |
-        <a class="nav-button" href="#contact me">CONTACT ME</a>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><img src="/images/DavidAmgad_logo-vertical.png" height="128px"></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="blog.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>DAVID AMGAD</h1>
-        <div class="slogan">sketching your
-            <div class="slogan-word">
-                <span>ideas</span>
-                <span>voice</span>
-                <span>dreams</span>
-                <span>business</span>
-                <span>success</span>
-            </div>
-        </div>
-        <br>
-        <br>
-        <p>I'm a young architect & designer based in Cairo, Egypt</p>
-        <p>I specialize in branding and brand identity creation.</p>
-        <button class="cta" type="button" onclick="window.location.href = '#contact us'">CONTACT US</button>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding"><img src="/images/DavidAmgad_logo-horizontal.png" height="48px"></span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
 
-    <main>
-        <!-- SERVICES -->
-        <section id="services">
-            <h2>SERVICES</h2>
-            <div class="services">
-                <div class="service" >
-                    <img src="/images/draft-services-branding.png" height="120px">
-                    <h3>Branding</h3>
-                    <p>I can help you create a visual identity that diffrentiate you from others</p>
-                </div>
-                <div class="service" >
-                    <img src="/images/draft-services-ui.png" height="120px">
-                    <h3>UI/UX</h3>
-                    <p>Start with a website that introduces your brand to the world</p>
-                </div>
-                <div class="service" >
-                    <img src="/images/draft-services-graphic-design-02.png" height="120px">
-                    <h3>Creative Design</h3>
-                    <p>Whether it's text, image, sound or video. deliver your message and engage customers</p>
-                </div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Photo grid -->
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="/images/David-Amgad-DM-EXT-124.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Appartment block exterior at daylight">
+                <img src="/images/David-Amgad-SD-EXT-146.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Private villa exterior at daylight">
+                <img src="/images/David-Amgad-SD-INT-176.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Appartment block entrance interior at sunset">
             </div>
 
-        </section>
-
-        <!-- PORTFOLIO -->
-        <section id="portfolio">
-            <h2>PORTFOLIO</h2>
-            <p>Here's a sample of my work</p>
-            <div class="gallery">
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
-                <div><img src="images/raft-gallery-placeholder.png"></div>
+            <div class="w3-third">
+                <img src="/images/David-Amgad-SD-EXT-145.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Appartment block exterior at daylight">
+                <img src="/images/David-Amgad-MD-EXT-121.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Resedential Nile tower exterior at daylight">
+                <img src="/images/David-Amgad-SD-INT-184.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Appartment block entrance interior at night">
             </div>
-        </section>
 
-        <!-- ABOUT ME -->
+            <div class="w3-third">
+                <img src="/images/David-Amgad-SD-EXT-154.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                <img src="/images/David-Amgad-SD-EXT-133.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Islamic style appartment complex exterior at daylight">
+                <img src="/images/David-Amgad-SD-INT-161.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Appartment block entrance interior at night">
+            </div>
+        </div>
 
-        <!-- CONTACT ME -->
-        <section id="contact me">
-            <h2>CONTACT US</h2>
-            <p>Let's get in touch, Send me a message</p>
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
 
-            <form name=contact-form method="POST" data-netlify="true">
-                <label for="name">
-                    Name <input type="text" id="name" name="name" required>
-                </label>
-                <br>
-                <label for="email">
-                    Email <input type="email" id="email" name="email" required>
-                </label>
-                <br>
-                <label for="message">
-                    Message <textarea id="message" name="message" rows="5" required></textarea>
-                </label>
-                <br>
-                <input class="submit" type="submit" id="submit" value="Send">
-            </form>
-        </section>
-    </main>
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>About Me</b></h4>
+            <img src="/images/DM-MARS-371.jpg" alt="Me" class="w3-image w3-padding-32" width="180" height="180">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>David Amgad</h4>
+                <p>I'm a young architect & graphic designer based in Cairo, Egypt.
+                    I love design and appreciate simplicity :)
+                </p>
+                <p>mail: contact@davidamgad.com</p>
+                <p>tel: 0127 323 8686</p>
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">Technical Skills</h4>
+                <p class="w3-wide">Architectural Vizualization</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+                </div>
+                <p class="w3-wide">Branding</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+                </div>
+                <p class="w3-wide">Motion Graphics</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:70%">70%</div>
+                </div>
+                <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom" onclick="window.location.href = 'David-Amgad-CV-199.pdf'">Download
+                        Resume</button></p>
+                <hr class="w3-opacity">
+
+                <!--
+                <h4 class="w3-padding-16">How much I charge</h4>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+                            <li class="w3-padding-16">Web Design</li>
+                            <li class="w3-padding-16">Photography</li>
+                            <li class="w3-padding-16">5GB Storage</li>
+                            <li class="w3-padding-16">Mail Support</li>
+                            <li class="w3-padding-16">
+                                <h2>$ 10</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+                            <li class="w3-padding-16">Web Design</li>
+                            <li class="w3-padding-16">Photography</li>
+                            <li class="w3-padding-16">50GB Storage</li>
+                            <li class="w3-padding-16">Endless Support</li>
+                            <li class="w3-padding-16">
+                                <h2>$ 25</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>Contact Me</b></h4>
+                <p>Do you want me to work with you? Fill out the form and fill me in with the details :) I love
+                    working with new people!</p>
+                <form name=contact-form method="POST" data-netlify="true" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>INFO</h3>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                        ultricies congue gravida diam non fringilla.</p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>BLOG POSTS</h3>
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Lorem</span><br>
+                            <span>Sed mattis nunc</span>
+                        </li>
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Ipsum</span><br>
+                            <span>Praes tinci sed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+                    </p>
+                </div>
+            </div>
+        </footer> -->
+
+        <div class="w3-black w3-center w3-padding-24">Copyrights reserved ©2020 <a href="https://www.davidamgad.com/"
+                title="W3.CSS" target="_blank" class="w3-hover-opacity">DAVID AMGAD</a></div>
+        
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
 </body>
-<br>
-
-<!-- Footer -->
-<footer>
-    <a class="social" href="https://www.facebook.com/DavidAmgad/" target="_blank"><img src="images/draft-facebook.svg"
-            width="24px" title="Facebook"></a>
-    <a class="social" href="https://www.instagram.com/david93x/" target="_blank"><img src="images/draft-instagram.svg"
-            width="24px" title="Instagram"></a>
-    <a class="social" href="https://www.linkedin.com/p/davidamgad/" target="_blank"><img
-            src="images/draft-linkedin.svg" width="24px" title="LinkedIn"></a>
-    <p>Copyrights reserved ©2020 DAVID AMGAD</p>
-    <a href="tel:+201273238686">+20 127 323 8686</a>
-</footer>
 
 </html>
