@@ -187,7 +187,7 @@
                 <h4 class="w3-center"><b>Contact Me</b></h4>
                 <p>Do you want me to work with you? Fill out the form and fill me in with the details :) I love
                     working with new people!</p>
-                <form name=contact-form method="POST" data-netlify="true" target="_blank">
+                <form name=contact-form method="POST" data-netlify="true" data-netlify-recaptcha="true" target="_blank">
                     <div class="w3-section">
                         <label>Name</label>
                         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -199,6 +199,8 @@
                     <div class="w3-section">
                         <label>Message</label>
                         <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <div data-netlify-recaptcha="true">
                     </div>
                     <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
                 </form>
